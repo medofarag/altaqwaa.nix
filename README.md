@@ -6,10 +6,10 @@ flake.nix file to easy install altaqwaa app on nixos
 nix
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05"; # replace 26.05 with any version you want
     altaqwaa = {
       url = "github:medofarag/altaqwaa.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs"; # optional
     };
   };
 
