@@ -2,7 +2,8 @@
 flake.nix file to easy install altaqwaa app on nixos
 
 ## on flake.nix file
-,,,nix
+```
+nix
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
@@ -23,10 +24,11 @@ flake.nix file to easy install altaqwaa app on nixos
     };
   };
 }
-,,,
+```
+
 
 ## on configuration.nix file
-,,,nix
+```nix
 { config, pkgs, inputs, ... }:
 
 {
@@ -34,4 +36,6 @@ flake.nix file to easy install altaqwaa app on nixos
     inputs.altaqwaa.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
-,,,
+```
+
+
